@@ -1,10 +1,9 @@
 {
   "publisher": "ajiu9",
-  "name": "ext-name",
-  "displayName": "ext-name",
+  "name": "vistra",
+  "displayName": "vistra",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@9.7.1",
   "description": "",
   "author": "Ajiu9 <615944323@qq.com>",
   "license": "MIT",
