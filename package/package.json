@@ -44,19 +44,6 @@
       "properties": {}
     }
   },
-  "scripts": {
-    "build": "tsup src/index.ts --external vscode",
-    "dev": "pnpm run build --watch",
-    "prepare": "pnpm run update",
-    "update": "vscode-ext-gen --output src/generated/meta.ts",
-    "lint": "eslint .",
-    "vscode:prepublish": "pnpm run build",
-    "publish": "vsce publish --no-dependencies",
-    "pack": "vsce package --no-dependencies",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp && pnpm run publish"
-  },
   "devDependencies": {
     "@ajiu9/eslint-config": "^2.5.2",
     "@types/node": "^22.4.1",
@@ -72,5 +59,16 @@
     "vite": "^5.4.1",
     "vitest": "^2.0.5",
     "vscode-ext-gen": "^0.4.1"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "pnpm run build --watch",
+    "update": "vscode-ext-gen --output src/generated/meta.ts",
+    "lint": "eslint .",
+    "vscode:prepublish": "pnpm run build",
+    "pack": "vsce package --no-dependencies",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && pnpm run publish"
   }
 }
